@@ -18,7 +18,7 @@
 * I have listed some milestones below to acheive.
 
 ## Contributing
-Have any suggestions? Submit an issue or fork and send a pull request with your changes.\ 
+Have any suggestions? Submit an issue or fork and send a pull request with your changes.\
 All contributions are more than welcome, and will be merged into `master` if satisfactory.\
 Your contribution will be reflected inside the application as well.
 

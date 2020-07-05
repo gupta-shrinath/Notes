@@ -24,13 +24,13 @@
 * Website Development - 31 August 2020
 
 # Contributing
-Have any suggestions? Submit an issue or fork and send a pull request with your changes. All contributions are more than welcome, and will be merged into `master` if satisfactory.
+Have any suggestions? Submit an issue or fork and send a pull request with your changes.\ All contributions are more than welcome, and will be merged into `master` if satisfactory.
 Your contribution will be reflected inside the application as well.
 
 ## Additional Info.
-Feel to free to checkout documentation to learn about this project.
-I'll add screenshots to this README as soon as I have the high fidelity ready.
-As you know I'm currently in design phase so if you have any UI related stuff.
+Feel to free to checkout documentation to learn about this project.\
+I'll add screenshots to this README as soon as I have the high fidelity ready.\
+As you know I'm currently in design phase so if you have any UI related stuff.\
 You can reach out to me on [twitter](https://twitter.com/gupta_shrinath)
 
 ## License

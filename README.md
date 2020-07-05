@@ -17,14 +17,9 @@
 * I'm currently designing the wireframes of the application.
 * I have listed some milestones below to acheive.
 
-## Milestones
-* UI Design - 15 July 2020
-* App Development -  31 July 2020
-* Testing - 15 August 2020
-* Website Development - 31 August 2020
-
 ## Contributing
-Have any suggestions? Submit an issue or fork and send a pull request with your changes.\ All contributions are more than welcome, and will be merged into `master` if satisfactory.
+Have any suggestions? Submit an issue or fork and send a pull request with your changes.\ 
+All contributions are more than welcome, and will be merged into `master` if satisfactory.\
 Your contribution will be reflected inside the application as well.
 
 ## Additional Info.

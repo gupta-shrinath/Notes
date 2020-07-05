@@ -2,9 +2,6 @@
 * Notes is a simple mobile application for students which allows them to share the notes, assignment, experiments  and any other study material.
 * Notes provides notifications, notice board and voting system.  
 
-# Users
-Students 
-
 # Features
 * Upload study materials.
 * Set submission date for notifications.
@@ -16,7 +13,7 @@ Students
 * Firebase - Database and other server functions.
 * Adobe XD - UI Design.
 
-## Status
+# Status
 * I'm currently designing the wireframes of the application.
 * I have listed some milestones below to acheive.
 

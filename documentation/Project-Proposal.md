@@ -20,3 +20,11 @@ Students
 * App Development -  31 July 2020
 * Testing - 15 August 2020
 * Website Development - 31 August 2020
+
+# Implementation
+* Notes application will be beta tested by the students of PHCET Rasayani Maharashtra India's IT Department and other suitable audience.
+* The google signin will be limited to the student.mes.ac.in domain for beta version.
+* Reporting issues could be done by a mail or creating a issue in beta version. 
+* Upon successful beta test maybe there will be a increase in the scope of the application to have signup for the colleges and administrations.
+
+

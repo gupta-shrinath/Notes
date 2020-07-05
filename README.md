@@ -9,7 +9,7 @@
 * Call for vote.
 
 ## Technical Info
-* Flutter - Mobile App Development, Web App Development.
+* Flutter - Mobile App Development.
 * Firebase - Database and other server functions.
 * Adobe XD - UI Design.
 

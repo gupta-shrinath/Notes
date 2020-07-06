@@ -15,7 +15,7 @@
 
 ## Status
 * I'm currently designing the wireframes of the application.
-* I have listed some milestones below to acheive.
+
 
 ## Contributing
 Have any suggestions? Submit an issue or fork and send a pull request with your changes.\

@@ -14,7 +14,7 @@
 * Adobe XD - UI Design.
 
 ## Status
-* I'm done designing the wireframes of the application you can check it out in the design folder or clik on the [Wireframe.](https://xd.adobe.com/view/57efebc3-fdd4-4c58-bed4-21208a02d490-02bc/)
+* I'm done designing the wireframes of the application you can check it out in the design folder or clik on the [Wireframe.](https://xd.adobe.com/view/57efebc3-fdd4-4c58-bed4-21208a02d490-02bc/) and share your feedback through the link or create a issue.
 * Now I'll focus on the high fidelity version and as soon as I get the screen designed I'll upload screenshots.
 
 ## Contributing

@@ -14,11 +14,11 @@
 * Adobe XD - UI Design.
 
 ## Status
-* I'm currently designing the wireframes of the application.
+* I'm done designing the wireframes of the application you can check it out in the design folder.
 
 
 ## Contributing
-Have any suggestions? Submit an issue or fork and send a pull request with your changes.\
+Have any suggestions or question? Submit an issue or fork and send a pull request with your changes.\
 All contributions are more than welcome, and will be merged into `master` if satisfactory.\
 Your contribution will be reflected inside the application as well.
 

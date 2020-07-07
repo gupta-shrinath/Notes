@@ -15,7 +15,7 @@
 
 ## Status
 * I'm done designing the wireframes of the application you can check it out in the design folder.
-
+* Now I'll focus on the high fidelity version and as soon as I get the screen designed I'll upload screenshots.
 
 ## Contributing
 Have any suggestions or question? Submit an issue or fork and send a pull request with your changes.\

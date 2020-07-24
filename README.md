@@ -1,8 +1,6 @@
-<p align="center">
-	<img alt="Notes Title" src="https://github.com/gupta-shrinath/Notes/blob/master/screenshots/Notes%20Title.PNG">
-	<img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&labelColor=black&logo=github">
-	<img alt="License" src="https://img.shields.io/github/license/gupta-shrinath/Notes?color=bright%20green&labelColor=black&logo=github&style=for-the-badge">
-</p>
+<img alt="Notes Title" src="https://github.com/gupta-shrinath/Notes/blob/master/screenshots/Notes%20Title.PNG">
+<img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&labelColor=black&logo=github">
+img alt="License" src="https://img.shields.io/github/license/gupta-shrinath/Notes?color=bright%20green&labelColor=black&logo=github&style=for-the-badge">
 
 * Notes is a simple mobile application for students which allows them to share the notes, assignment, experiments  and any other study material.
 * Notes provides notifications, notice board and voting system.  

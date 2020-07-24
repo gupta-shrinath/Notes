@@ -1,5 +1,5 @@
 <p align="center">
-	<h1> Notes </h1>
+	 Notes
 	<img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&labelColor=black&logo=github">
 	<img alt="License" src="https://img.shields.io/github/license/gupta-shrinath/Notes?color=bright%20green&labelColor=black&logo=github&style=for-the-badge">
 </p>

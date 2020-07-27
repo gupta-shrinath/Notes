@@ -19,7 +19,8 @@
 * Adobe XD - UI Design.
 
 ## Status
-* Created the App Onboarding pages and selected the colors and font.
+* Designing the high fidelity version of UI you can view it [here.](https://xd.adobe.com/view/7366ddfa-2bc4-41d8-bcec-b360788499f5-2635/)
+* Need help in colors scheme :pray:
 * I'm done designing the wireframes of the application you can check it out in the design folder or click on the [Wireframe.](https://xd.adobe.com/view/57efebc3-fdd4-4c58-bed4-21208a02d490-02bc/) and share your feedback through the link or create a issue.
 
 

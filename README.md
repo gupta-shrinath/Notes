@@ -19,9 +19,8 @@
 * Adobe XD - UI Design.
 
 ## Status
-* Almost done designing the high fidelity version take a look at the below screenshots.
-* I'm done designing the wireframes of the application you can check it out in the design folder or click on the [Wireframe.](https://xd.adobe.com/view/57efebc3-fdd4-4c58-bed4-21208a02d490-02bc/) and share your feedback through the link or create a issue.
-
+* Done designing the high fidelity version take a look at the below screenshots.
+* Now its coding time :computer:.
 
 ## Screenshots
 ![App Onboarding 1](https://github.com/gupta-shrinath/Notes/blob/master/screenshots/App%20Onboarding%201.png)

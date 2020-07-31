@@ -21,6 +21,7 @@
 ## Status
 * Done designing the high fidelity version take a look at the below screenshots.
 * Now its coding time :computer:.
+* Take a look at the [design](https://xd.adobe.com/view/7366ddfa-2bc4-41d8-bcec-b360788499f5-2635/).
 
 ## Screenshots
 ![App Onboarding 1](https://github.com/gupta-shrinath/Notes/blob/master/screenshots/App%20Onboarding%201.png)

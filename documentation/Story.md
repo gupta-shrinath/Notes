@@ -11,7 +11,7 @@ During the designing phase of High Fidelity Ayush Patil, Nikhil Godbole, Aditya 
 
 ### Remarks 
 `Designing this project in XD was not fun.`<br/>
--Gupta Shrinath (this is a pun intended joke)'
+-Gupta Shrinath (this is a pun intended joke)
 
 `Now I'm a pro `<br/>
 -Ayush Patil

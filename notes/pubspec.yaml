@@ -32,6 +32,8 @@ dependencies:
   flutter_swiper: ^1.1.6
   # App OnBoarding Indicator
   flutter_page_indicator: ^0.0.3
+  # Bottom Navigation Indicator
+  badges: ^1.1.1
 
 dev_dependencies:
   flutter_test:

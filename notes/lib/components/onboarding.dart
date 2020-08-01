@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes/components/bottom_navigation.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/onboarding_item.dart';
 
@@ -82,7 +83,10 @@ class OnBoarding extends StatelessWidget {
                             borderRadius: BorderRadius.circular(50),
                           ),
                           color: item.buttonColor,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => BottomNavigation()));
+                          },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[

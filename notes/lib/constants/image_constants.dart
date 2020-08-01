@@ -4,4 +4,5 @@ class ImageConstants {
   static String kPushNotification = 'assets/icons/push-notifications.png';
   static String kAudit = 'assets/icons/audit.png';
   static String kVote = 'assets/icons/vote.png';
+  static String kAccount = 'assets/icons/account.png';
 }

@@ -29,11 +29,6 @@
 ![Notice Board](https://github.com/gupta-shrinath/Notes/blob/master/screenshots/Notice-Board.PNG)
 ![Notice](https://github.com/gupta-shrinath/Notes/blob/master/screenshots/Notice.PNG)
 
-## Contributing
-Have any suggestions or question? Submit an issue or fork and send a pull request with your changes.\
-All contributions are more than welcome, and will be merged into `master` if satisfactory.\
-Your contribution will be reflected inside the application as well.
-
 ## Additional Info.
 Feel to free to checkout documentation to learn about this project.(There's a story so do check it out :blush:)\
 As you know I'm currently in coding phase so if you would like to code something (UI,functionality) do let me know.\

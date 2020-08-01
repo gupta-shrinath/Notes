@@ -35,8 +35,8 @@ All contributions are more than welcome, and will be merged into `master` if sat
 Your contribution will be reflected inside the application as well.
 
 ## Additional Info.
-Feel to free to checkout documentation to learn about this project.\
-As you know I'm currently in design phase so if you have any UI related stuff.\
+Feel to free to checkout documentation to learn about this project.(There's a story so do check it out :blush:)\
+As you know I'm currently in coding phase so if you would like to code something (UI,functionality) do let me know.\
 You can reach out to me on [twitter](https://twitter.com/gupta_shrinath)
 
 ## License

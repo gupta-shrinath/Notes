@@ -15,7 +15,7 @@ Students
 * Firebase - Database and other server functions
 * Adobe XD - UI Design
 
-# Milestones
+# Milestones to achieve
 * UI Design - 15 July 2020
 * App Development -  31 July 2020
 * Testing - 15 August 2020

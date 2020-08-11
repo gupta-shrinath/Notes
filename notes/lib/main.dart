@@ -61,7 +61,6 @@ class Notes extends StatelessWidget {
           );
         },
         onIndexChanged: (index) {
-          print(index);
           currentItem = onBoardingItems[index];
         },
         itemCount: 4,

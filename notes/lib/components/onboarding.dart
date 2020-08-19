@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notes/components/bottom_navigation.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/onboarding_item.dart';
+import 'package:notes/routes/contributors.dart';
 
 class OnBoarding extends StatelessWidget {
   final OnBoardingItem item;
@@ -85,7 +85,7 @@ class OnBoarding extends StatelessWidget {
                           color: item.buttonColor,
                           onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => BottomNavigation()));
+                                builder: (context) => Contributors()));
                           },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

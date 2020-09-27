@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notes/constants/image_constants.dart';
+import 'package:notes/model/contributor.dart';
 import 'package:notes/model/onboarding_item.dart';
+import 'package:notes/model/social_media.dart';
 import 'package:notes/routes/contributors.dart';
 
 class OnBoarding extends StatelessWidget {
@@ -84,8 +86,20 @@ class OnBoarding extends StatelessWidget {
                           ),
                           color: item.buttonColor,
                           onPressed: () {
+                            var contributor = Contributor(
+                                name: 'Dev',
+                                imageURL: '',
+                                message: 'Fun Project !',
+                                roles: ['Developer'],
+                                socialMedia: SocialMedia(
+                                    github:
+                                        'https://github.com/gupta-shrinath/',
+                                    twitter: '',
+                                    youtube: '',
+                                    spotify: ''));
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => Contributors()));
+                                builder: (context) =>
+                                    Contributors(contributor: contributor)));
                           },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

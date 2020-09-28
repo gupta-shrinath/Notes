@@ -5,12 +5,18 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:notes/components/onboarding.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/onboarding_item.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Color(0xFF67349C), //or set color with: Color(0xFF0000FF)
+  ));
+
   runApp(Notes());
 }
 
 class Notes extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     List<OnBoardingItem> onBoardingItems = [

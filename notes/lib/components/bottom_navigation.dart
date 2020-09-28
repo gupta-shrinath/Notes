@@ -1,6 +1,10 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:notes/constants/image_constants.dart';
+import 'package:notes/routes/account.dart';
+import 'package:notes/routes/documents.dart';
+import 'package:notes/routes/home.dart';
+
 
 class BottomNavigation extends StatefulWidget {
   @override
@@ -9,6 +13,14 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int _itemSelected = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+
+
+  }
 
   List<BottomNavigationBarItem> unSelectedItems = [
     BottomNavigationBarItem(
@@ -106,9 +118,22 @@ class _BottomNavigationState extends State<BottomNavigation> {
         ),
         title: SizedBox())
   ];
+  // list of widgets to be displayed on screen
+   List<Widget> _widgetOptions = <Widget>[
+    Home(),
+    Documents(),
+     Account()
+
+  ];
+
+   // heading of appbar
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      body: _widgetOptions.elementAt(_itemSelected),
       bottomNavigationBar: SizedBox(
         height: 70.0,
         child: BottomNavigationBar(

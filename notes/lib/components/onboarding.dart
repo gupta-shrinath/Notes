@@ -84,7 +84,7 @@ class OnBoarding extends StatelessWidget {
                           ),
                           color: item.buttonColor,
                           onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(
                                 builder: (context) => BottomNavigation()));
                           },
                           child: Row(

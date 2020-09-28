@@ -12,7 +12,7 @@ class Contributors extends StatelessWidget {
     return Scaffold(
         appBar: header(
             Text(
-              'Contributor',
+              'CONTRIBUTORS',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -21,6 +21,12 @@ class Contributors extends StatelessWidget {
             Icon(Icons.arrow_back_ios)),
         body: ListView(
           children: [
+            ContributorCard(
+              contributor: contributor,
+            ),
+            ContributorCard(
+              contributor: contributor,
+            ),
             ContributorCard(
               contributor: contributor,
             ),

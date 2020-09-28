@@ -87,16 +87,17 @@ class OnBoarding extends StatelessWidget {
                           color: item.buttonColor,
                           onPressed: () {
                             var contributor = Contributor(
-                                name: 'Dev',
-                                imageURL: '',
-                                message: 'Fun Project !',
-                                roles: ['Developer'],
-                                socialMedia: SocialMedia(
-                                    github:
-                                        'https://github.com/gupta-shrinath/',
-                                    twitter: '',
-                                    youtube: '',
-                                    spotify: ''));
+                              name: 'Gupta Shrinath',
+                              imageURL:
+                                  'https://avatars2.githubusercontent.com/u/42563130?s=400&u=336f9ce2da09ec48906c75de9ed0996db57ed817&v=4',
+                              message: 'Fun Project !',
+                              roles: ['Developer', 'UI Designer'],
+                              socialMedia: SocialMedia(
+                                  github: 'https://github.com/gupta-shrinath/',
+                                  twitter: 'https://twitter.com/gupta_shrinath',
+                                  youtube: '',
+                                  spotify: ''),
+                            );
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) =>
                                     Contributors(contributor: contributor)));

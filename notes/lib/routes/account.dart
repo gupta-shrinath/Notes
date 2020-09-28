@@ -63,16 +63,18 @@ class _AccountState extends State<Account> {
                   ),
                 ),
               ),
-              Column(
-                children: [
-                  AccountOptions(text: 'Submissions',onPressed: (){print('pressed');},img: ImageConstants.kAssignment,),
-                  AccountOptions(text: 'Report Issue',onPressed: (){print('pressed');},img: ImageConstants.kReportIssue,),
-                  AccountOptions(text: 'Notice',onPressed: (){print('pressed');},icon: Icon(Icons.dock,color: Color(0xffAB5BE8),size: 24.0,),),
-                  AccountOptions(text: 'Contributers',onPressed: (){print('pressed');},icon: Icon(Icons.person,color: Color(0xffAB5BE8),size: 24.0,),),
-                  AccountOptions(text: 'Update',onPressed: (){print('pressed');},img: ImageConstants.kUpdate,),
-                  AccountOptions(text: 'Third-party software',onPressed: (){print('pressed');},img: ImageConstants.kPrivacy,),
-                  AccountOptions(text: 'Logout',onPressed: (){print('pressed');},img: ImageConstants.kExitApp,)
-                ],
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    AccountOptions(text: 'Submissions',onPressed: (){print('pressed');},img: ImageConstants.kAssignment,),
+                    AccountOptions(text: 'Report Issue',onPressed: (){print('pressed');},img: ImageConstants.kReportIssue,),
+                    AccountOptions(text: 'Notice',onPressed: (){print('pressed');},icon: Icon(Icons.dock,color: Color(0xffAB5BE8),size: 24.0,),),
+                    AccountOptions(text: 'Contributers',onPressed: (){print('pressed');},icon: Icon(Icons.person,color: Color(0xffAB5BE8),size: 24.0,),),
+                    AccountOptions(text: 'Update',onPressed: (){print('pressed');},img: ImageConstants.kUpdate,),
+                    AccountOptions(text: 'Third-party software',onPressed: (){print('pressed');},img: ImageConstants.kPrivacy,),
+                    AccountOptions(text: 'Logout',onPressed: (){print('pressed');},img: ImageConstants.kExitApp,)
+                  ],
+                ),
               )
             ],
           ),

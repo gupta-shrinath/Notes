@@ -2,6 +2,9 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/navigation_item.dart';
+import 'package:notes/routes/account.dart';
+import 'package:notes/routes/documents.dart';
+import 'package:notes/routes/home.dart';
 
 class BottomNavigation extends StatefulWidget {
   @override
@@ -64,9 +67,19 @@ class _BottomNavigationState extends State<BottomNavigation> {
         .toList();
   }
 
+  List<Widget> _widgetOptions = <Widget>[
+    Home(),
+    Documents(),
+    Account()
+
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: _widgetOptions.elementAt(_itemSelected),
+
+
       bottomNavigationBar: SizedBox(
         height: 70.0,
         child: BottomNavigationBar(

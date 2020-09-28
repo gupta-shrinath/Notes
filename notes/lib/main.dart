@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_page_indicator/flutter_page_indicator.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -7,6 +8,9 @@ import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/onboarding_item.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Color(0xFF67349C), //or set color with: Color(0xFF0000FF)
+  ));
   runApp(Notes());
 }
 

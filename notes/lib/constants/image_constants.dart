@@ -10,4 +10,10 @@ class ImageConstants {
   static String kTwitter = 'assets/icons/twitter.png';
   static String kYoutube = 'assets/icons/youtube.png';
   static String kSpotify = 'assets/icons/spotify.png';
+  static String kExitApp='assets/icons/exit_to_app-24px.png';
+  static String kAssignment='assets/icons/assignment_late-24px.png';
+  static String kReportIssue='assets/icons/new_releases-24px.png';
+  static String kPrivacy='assets/icons/privacy_tip-24px.png';
+  static String kUpdate='assets/icons/system_update-24px.png';
+
 }

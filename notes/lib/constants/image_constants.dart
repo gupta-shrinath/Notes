@@ -5,4 +5,9 @@ class ImageConstants {
   static String kAudit = 'assets/icons/audit.png';
   static String kVote = 'assets/icons/vote.png';
   static String kAccount = 'assets/icons/account.png';
+  static String kAvatar = 'assets/icons/avatar.png';
+  static String kGithub = 'assets/icons/github.png';
+  static String kTwitter = 'assets/icons/twitter.png';
+  static String kYoutube = 'assets/icons/youtube.png';
+  static String kSpotify = 'assets/icons/spotify.png';
 }

@@ -33,8 +33,7 @@ class ContributorCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          'https://avatars2.githubusercontent.com/u/42563130?s=460&u=336f9ce2da09ec48906c75de9ed0996db57ed817&v=4'),
+                      backgroundImage: NetworkImage(''),
                       radius: 30.0,
                     ),
                     SizedBox(

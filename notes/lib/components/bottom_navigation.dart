@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:notes/constants/dimension_constants.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/navigation_item.dart';
 import 'package:notes/routes/account.dart';
@@ -36,6 +37,8 @@ List<NavigationItem> navigationItems = <NavigationItem>[
 class _BottomNavigationState extends State<BottomNavigation> {
   int _itemSelected = 0;
 
+  // Create navigation items and show selection
+  // item on active navigation index.
   getBottomBarItems(context) {
     return navigationItems
         .map(
@@ -70,18 +73,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
   List<Widget> _widgetOptions = <Widget>[
     Home(),
     Documents(),
-    Account()
-
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _widgetOptions.elementAt(_itemSelected),
-
-
       bottomNavigationBar: SizedBox(
-        height: 70.0,
+        height: DimensionConstants.kBottomNavigationHeight,
         child: BottomNavigationBar(
           backgroundColor: Theme.of(context).primaryColor,
           selectedItemColor: Colors.white,
@@ -89,7 +88,13 @@ class _BottomNavigationState extends State<BottomNavigation> {
           currentIndex: _itemSelected,
           onTap: (index) {
             setState(() {
-              _itemSelected = index;
+              // If account is selected go to Account route. //
+              if (index == 2) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Account()));
+              } else {
+                _itemSelected = index;
+              }
             });
           },
           items: getBottomBarItems(context),

@@ -5,7 +5,7 @@ class AccountOptions extends StatelessWidget {
   final String text;
   final String img;
   final Icon icon;
-  AccountOptions({this.text,this.onPressed,this.img,this.icon});
+  AccountOptions({this.text, this.onPressed, this.img, this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -15,18 +15,22 @@ class AccountOptions extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: [
-            SizedBox(width: 22.0,),
-            icon?? Image.asset(
-             img,
-              height: 24,
+            SizedBox(
+              width: 33.0,
             ),
-            SizedBox(width: 6,),
+            icon ??
+                Image.asset(
+                  img,
+                  height: 24,
+                  width: 24,
+                ),
+            SizedBox(
+              width: 6,
+            ),
             Text(
               text,
               style: TextStyle(
-                fontSize: 19,
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
+                fontWeight: FontWeight.bold,
               ),
             )
           ],

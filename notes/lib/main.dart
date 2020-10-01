@@ -4,12 +4,15 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_page_indicator/flutter_page_indicator.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:notes/components/onboarding.dart';
+import 'package:notes/constants/color_constants.dart';
 import 'package:notes/constants/image_constants.dart';
 import 'package:notes/model/onboarding_item.dart';
 
 void main() {
+  // Set the status bar color to primary color throughout app. //
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Color(0xFF67349C), //or set color with: Color(0xFF0000FF)
+    statusBarColor:
+        ColorConstants.primaryColor, //or set color with: Color(0xFF0000FF)
   ));
   runApp(Notes());
 }
@@ -22,27 +25,27 @@ class Notes extends StatelessWidget {
         description:
             'App for organization of your\n        academic study material',
         icon: ImageConstants.kNotesLogo,
-        color: Color(0xFF003961),
-        buttonColor: Color(0xFF2196F3),
+        color: ColorConstants.onBoardingIconDark,
+        buttonColor: ColorConstants.blueLight,
       ),
       new OnBoardingItem(
-        color: Color(0xFFDE6FA1),
+        color: ColorConstants.accentColor,
         description:
             'Upload assignments, experiments\n            and any other document',
         icon: ImageConstants.kAudit,
-        buttonColor: Color(0xFF1565C0),
+        buttonColor: ColorConstants.blueDark,
       ),
       new OnBoardingItem(
         description: 'Notice Board',
         icon: ImageConstants.kPushNotification,
-        color: Color(0xFF003961),
-        buttonColor: Color(0xFF2196F3),
+        color: ColorConstants.onBoardingIconDark,
+        buttonColor: ColorConstants.blueLight,
       ),
       new OnBoardingItem(
-        color: Color(0xFFDE6FA1),
+        color: ColorConstants.accentColor,
         description: 'Call for Vote',
         icon: ImageConstants.kVote,
-        buttonColor: Color(0xFF1565C0),
+        buttonColor: ColorConstants.blueDark,
       ),
     ];
     OnBoardingItem currentItem = onBoardingItems[0];
@@ -50,8 +53,8 @@ class Notes extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Notes',
       theme: ThemeData(
-        primaryColor: Color(0xFF67349C),
-        accentColor: Color(0xFFDE6FA1),
+        primaryColor: ColorConstants.primaryColor,
+        accentColor: ColorConstants.accentColor,
         fontFamily: 'Manrope',
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
@@ -76,8 +79,8 @@ class Notes extends StatelessWidget {
               child: new Align(
                 alignment: Alignment.bottomCenter,
                 child: new DotSwiperPaginationBuilder(
-                  color: Color(0XFFC9C7C7),
-                  activeColor: Color(0XFF2196F3),
+                  color: ColorConstants.gray,
+                  activeColor: ColorConstants.blueLight,
                   size: 10.0,
                   space: 10.0,
                 ).build(context, config),

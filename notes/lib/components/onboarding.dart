@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes/components/bottom_navigation.dart';
 import 'package:notes/constants/image_constants.dart';
-import 'package:notes/model/contributor.dart';
 import 'package:notes/model/onboarding_item.dart';
-import 'package:notes/model/social_media.dart';
-
 
 class OnBoarding extends StatelessWidget {
   final OnBoardingItem item;
@@ -87,21 +84,9 @@ class OnBoarding extends StatelessWidget {
                           ),
                           color: item.buttonColor,
                           onPressed: () {
-                            // var contributor = Contributor(
-                            //   name: 'Gupta Shrinath',
-                            //   imageURL:
-                            //       'https://avatars2.githubusercontent.com/u/42563130?s=400&u=336f9ce2da09ec48906c75de9ed0996db57ed817&v=4',
-                            //   message: 'Fun Project !',
-                            //   roles: ['Developer', 'UI Designer'],
-                            //   socialMedia: SocialMedia(
-                            //       github: 'https://github.com/gupta-shrinath/',
-                            //       twitter: 'https://twitter.com/gupta_shrinath',
-                            //       youtube: '',
-                            //       spotify: ''),
-                            // );
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (context) =>
-                                    BottomNavigation()));
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) => BottomNavigation()));
                           },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

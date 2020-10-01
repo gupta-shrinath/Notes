@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:notes/components/contributor_card.dart';
 import 'package:notes/components/header.dart';
+import 'package:notes/constants/text_style_constants.dart';
 import 'package:notes/model/contributor.dart';
 
 class Contributors extends StatelessWidget {
@@ -11,14 +12,14 @@ class Contributors extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: header(
-            Text(
-              'CONTRIBUTORS',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Icon(Icons.arrow_back_ios)),
+          Text('CONTRIBUTORS', style: TextStyleConstants.kAppbarTextStyle),
+          GestureDetector(
+            child: Icon(Icons.arrow_back_ios),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
         body: ListView(
           children: [
             ContributorCard(

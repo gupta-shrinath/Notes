@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:notes/components/accountOptions.dart';
+import 'package:notes/components/account_options.dart';
+import 'package:notes/components/header.dart';
 import 'package:notes/constants/image_constants.dart';
+import 'package:notes/constants/text_style_constants.dart';
 import 'package:notes/model/contributor.dart';
 import 'package:notes/model/social_media.dart';
 import 'package:notes/routes/contributors.dart';
-
 
 class Account extends StatefulWidget {
   @override
@@ -15,7 +16,15 @@ class _AccountState extends State<Account> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ACCOUNT'),),
+      appBar: header(
+        Text('ACCOUNT', style: TextStyleConstants.kAppbarTextStyle),
+        GestureDetector(
+          child: Icon(Icons.arrow_back_ios),
+          onTap: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: SingleChildScrollView(
         child: Container(
           width: double.infinity,
@@ -28,16 +37,15 @@ class _AccountState extends State<Account> {
                     backgroundColor: Color(0xffAB5BE8),
                     radius: 61.0,
                     child: Icon(
-                        Icons.person,
-                      size:42.0 ,
+                      Icons.person,
+                      size: 42.0,
                       color: Colors.white,
                     ),
-
                   ),
                 ),
                 Container(
-                  color: Color(0xffD0A2FF),
-                  height: 106.0,
+                  color: Color(0xFFb56eff),
+                  height: 100.0,
                   child: Padding(
                     padding: const EdgeInsets.only(left: 32.0),
                     child: Column(
@@ -45,60 +53,94 @@ class _AccountState extends State<Account> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                            'John',
+                          'John Doe',
                           style: TextStyle(
-                            fontSize: 27,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
-
-
                           ),
-
                         ),
                         Text(
                           'johndeo@email.com',
                           style: TextStyle(
-                          fontSize: 19,
-
-
-                        ),
-
+                            fontSize: 14,
+                          ),
                         )
                       ],
-
                     ),
                   ),
                 ),
                 Column(
                   children: [
-                    AccountOptions(text: 'Submissions',onPressed: (){print('pressed');},img: ImageConstants.kAssignment,),
-                    AccountOptions(text: 'Report Issue',onPressed: (){print('pressed');},img: ImageConstants.kReportIssue,),
-                    AccountOptions(text: 'Notice',onPressed: (){print('pressed');},icon: Icon(Icons.dock,color: Color(0xffAB5BE8),size: 24.0,),),
+                    AccountOptions(
+                      text: 'Submissions',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      img: ImageConstants.kAssignment,
+                    ),
+                    AccountOptions(
+                      text: 'Report Issue',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      img: ImageConstants.kReportIssue,
+                    ),
+                    AccountOptions(
+                      text: 'Notice',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      icon: Icon(
+                        Icons.description,
+                        color: Color(0xffAB5BE8),
+                        size: 24.0,
+                      ),
+                    ),
                     AccountOptions(
                       text: 'Contributers',
-                      onPressed: (){
+                      onPressed: () {
                         var contributor = Contributor(
-                          name: 'Gupta Shrinath',
-                          imageURL:
-                          'https://avatars2.githubusercontent.com/u/42563130?s=400&u=336f9ce2da09ec48906c75de9ed0996db57ed817&v=4',
+                          name: 'John Doe',
+                          imageURL: '',
                           message: 'Fun Project !',
                           roles: ['Developer', 'UI Designer'],
                           socialMedia: SocialMedia(
-                              github: 'https://github.com/gupta-shrinath/',
-                              twitter: 'https://twitter.com/gupta_shrinath',
+                              github: 'https://github.com/',
                               youtube: '',
                               spotify: ''),
                         );
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) =>
-                                Contributors(contributor: contributor,)));
+                            builder: (context) => Contributors(
+                                  contributor: contributor,
+                                )));
                       },
-                      icon: Icon(Icons.person,color: Color(0xffAB5BE8),
+                      icon: Icon(
+                        Icons.person,
+                        color: Color(0xffAB5BE8),
                         size: 24.0,
                       ),
                     ),
-                    AccountOptions(text: 'Update',onPressed: (){print('pressed');},img: ImageConstants.kUpdate,),
-                    AccountOptions(text: 'Third-party software',onPressed: (){print('pressed');},img: ImageConstants.kPrivacy,),
-                    AccountOptions(text: 'Logout',onPressed: (){print('pressed');},img: ImageConstants.kExitApp,)
+                    AccountOptions(
+                      text: 'Update',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      img: ImageConstants.kUpdate,
+                    ),
+                    AccountOptions(
+                      text: 'Third-party software',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      img: ImageConstants.kPrivacy,
+                    ),
+                    AccountOptions(
+                      text: 'Logout',
+                      onPressed: () {
+                        print('pressed');
+                      },
+                      img: ImageConstants.kExitApp,
+                    )
                   ],
                 )
               ],
@@ -109,4 +151,3 @@ class _AccountState extends State<Account> {
     );
   }
 }
-

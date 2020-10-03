@@ -33,11 +33,11 @@ class _DocumentsState extends State<Documents> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: header(
-            Text('ACCOUNT', style: TextStyleConstants.kAppbarTextStyle),
+            Text('DOCUMENT', style: TextStyleConstants.kAppbarTextStyle),
             SizedBox(width: 2,)
         ),
         body: Padding(
-          padding: const EdgeInsets.only(left: 27,right: 27,top: 10),
+          padding: const EdgeInsets.only(left: 17,right: 17,top: 10),
           child: Column(
             children: [
             Row(
@@ -45,48 +45,58 @@ class _DocumentsState extends State<Documents> {
 
               children: [
               Text(
-                'Subject (${_list.length})',
+                'SUBJECT (${_list.length})',
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.black,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: FontWeight.w500,
                     fontFamily: 'Manrope'
 
                 ),
               ),
               Row(
                 children: [
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(5)),
-                        color: isList?Color(0xFFb56eff):Colors.white
+                  GestureDetector(
+                    onTap:(){ if(!isList){setState(() {
+                      isList=true;
+                    });}},
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          color: isList?Color(0xFFb56eff):Colors.white
 
 
 
-                    ),
-                    child: Icon(
-                      Icons.view_agenda,
-                      size: 25,
-                      color: isList?Colors.white: Color(0xff67349C),
+                      ),
+                      child: Icon(
+                        Icons.view_agenda,
+                        size: 25,
+                        color: isList?Colors.white: Color(0xff67349C),
+                      ),
                     ),
                   ),
                   SizedBox(
                       width: 5.0
                   ),
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(5)),
-                        color: !isList?Color(0xFFb56eff):Colors.white
+                  GestureDetector(
+                    onTap: (){ if(isList){setState(() {
+                      isList=false;
+                    });}},
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          color: !isList?Color(0xFFb56eff):Colors.white
 
 
 
-                    ),
-                    child: Icon(
-                      Icons.view_module,
-                      size: 25,
-                      color: !isList?Colors.white: Color(0xff67349C),
+                      ),
+                      child: Icon(
+                        Icons.view_module,
+                        size: 25,
+                        color: !isList?Colors.white: Color(0xff67349C),
+                      ),
                     ),
                   ),
                 ],
@@ -96,8 +106,8 @@ class _DocumentsState extends State<Documents> {
               SizedBox(height: 10,),
               Flexible(
                     child: new GridView.count(
-                      crossAxisCount: 2,
-                      childAspectRatio: 1.0,
+                      crossAxisCount: isList?1:2,
+                      childAspectRatio: isList?3.5:1.0,
                       padding: const EdgeInsets.all(4.0),
                       mainAxisSpacing: 6.0,
                       crossAxisSpacing: 6.0,

@@ -15,5 +15,6 @@ class ImageConstants {
   static String kReportIssue='assets/icons/new_releases-24px.png';
   static String kPrivacy='assets/icons/privacy_tip-24px.png';
   static String kUpdate='assets/icons/system_update-24px.png';
+  static String kFolder='assets/icons/folder.png';
 
 }
